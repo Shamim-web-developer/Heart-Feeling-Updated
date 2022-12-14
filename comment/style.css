@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+*
+{
+  margin: 0;
+  padding: 0 ;
+  user-select: none;
+}
+body 
+{
+  background: #1f1b24;
+  background-image;: url('/');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+#load 
+{
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  background: #1f1b24;
+}
+#load-box 
+{
+  height: 160px;
+  width: 160px;
+  border: 10px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: roll 1.2s infinite linear;
+}
+@keyframes roll 
+{
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+#load-name 
+{
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-family:'Carter One', Monospace;
+}
+#box 
+{
+  display: none;
+}
+#container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+#box-1 
+{
+  display: block;
+  animation: onoff 0s ;
+}
+#box-2 
+{
+  display: none;
+  animation: onoff 0s ;
+}
+@keyframes onoff 
+{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+#header
+{
+  height: 20vh;
+}
+#icon 
+{
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  height: 90px;
+  width: 90px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #111;
+  animation: knock 10s infinite;
+}
+@keyframes knock 
+{
+  0% {
+    transform: scale(1);
+  }
+  2.5% {
+    transform: scale(0.5);
+  }
+  5% {
+    transform: scale(1.2);
+  }
+  7.5% {
+    transform: scale(0.85);
+  }
+  10% {
+    transform: scale(1);
+  }
+  10.5% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+#head 
+{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: #fff;
+  font-size: 3.4em;
+  text-shadow: 0 0 10px #111,
+               0 0 20px #111,
+               0 0 40px #111;
+  font-family: 'Carter One', cursive;
+}
+#sms
+{
+  font-family: 'Pacifico';
+}
+#page 
+{
+  position: relative;
+  width: 285px;
+  height: 390px;
+  border: 3px solid #111;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+#profile 
+{
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 0 10px gray,
+              0 0 20px gray;
+}
+#nick 
+{
+  font-size: 1.4em;
+  font-family: 'Bungee Spice', cursive;
+}
+#bio 
+{
+  font-size: 1.6em;
+  font-family: 'Pacifico', cursive;
+  color: purple;
+}
+#call
+{
+  font-family: 1em;
+  font-family: 'Pacifico', cursive;
+  color: #121212;
+}
+#link 
+{
+  display: flex;
+  justify-content: center;
+}
+#gm 
+{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px gray,
+              0 0 20px gray;
+}
+#fb 
+{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px gray,
+              0 0 20px gray;
+}
+#or 
+{
+  padding: 8px;
+  font-family: 'Pacifico',cursive;
+}
+#cmt-box 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cmt 
+{
+  text-align: center;
+  font-family: 'Carter One',cursive;
+  color: #fff;
+  text-shadow: 0 0 10px #111,
+               0 0 20px #111,
+               0 0 40px #111;
+  font-size: 1.8em;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #111,
+              0 0 20px #111,
+              0 0 30px #111;
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+  animation: knock 10s infinite;
+}
+.cmp 
+{
+  height: 65px;
+  width: 65px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 0 10px gray,
+              0 0 20px gray,
+              0 0 40px gray;
+}
+.cmd 
+{
+  height: 30px;
+  width:  200px;
+  padding-left: 8px;
+  border: 2px solid #111;
+  border-radius: 4px;
+  background: transparent;
+}
+#button 
+{
+  margin-top: 10px;
+  font-family: 'Carter One';
+  text-align: center;
+  align-items: center;
+  font-size: 1.3em;
+  background: url('image/profile-bg.jpg');
+  background-size: 80px 60px;
+  width: 75px;
+  color: #fff;
+  text-shadow: 0 0 10px #111,
+               0 0 15px #111,
+               0 0 20px #111,
+               0 0 25px #fff;
+  border: 2px solid #111;
+  border-radius: 5px;
+  box-shadow: 0 0 6px gray,
+              0 0 12px gray;
+  padding: 3px;
+  margin-left: 10px;
+}
+#button:active
+{
+  font-size: 1.1em;
+  width: 65px;
+}

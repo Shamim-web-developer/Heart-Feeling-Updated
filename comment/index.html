@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="preload" href="style.css" type="text/css" media="all" />
+  <link rel="preload" href="script.js" type="text/js" media="all" />
+   <link rel="preload" href="image/profile-bg.jpg" title="img" type="image/jpeg" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>My Information</title>
+</head>
+<body id="body" onload="pageload()">
+  <div id="load">
+      <div id="load-box">
+      </div>
+      <br />
+      <p id="load-name">Loading...</p>
+  </div>
+    
+    <!--Hidden-->
+     <div hidden>
+    <img hidden="" src="image/profile-bg.jpg"/>
+     </div>
+    <!--Hidden-->
+     
+     
+  <div id="box">
+  <div id="container">
+    <div id="box-1">
+
+      <div id="header">
+        <p id="head">
+          My Info
+        </p>
+        <img oncontextmenu="return false" onclick="clickclose()" id="icon" src="image/close.png" alt="" />
+      </div>
+      <br />
+      <div id="page">
+        <br /><br />
+        <img oncontextmenu="return false" id="profile" src="image/profile.png" />
+        <br />
+        <p id="nick">
+          Md <br /> Shamim Hasan
+        </p>
+        <p id="bio">
+          web deginer
+        </p>
+        <p id="call">
+          contract us
+        </p>
+        <br />
+        <div id="link">
+          <img oncontextmenu="return false" onclick="gm()" id="gm" src="server/gm-icon.png" />
+          <p id="or">
+            OR
+          </p>
+          <img oncontextmenu="return false" onclick="fb()" id="fb" src="server/fb-icon.png" />
+        </div>
+      </div>
+      <br /><br /><br />
+      <div id="cmt-box">
+        <p onclick="cmton()" id="cmt">
+          Comment
+        </p>
+      </div>
+      <br />
+    </div>
+    <div id="box-2">
+
+      <div id="header">
+        <p id="head">
+          Message
+        </p>
+        <img oncontextmenu="return false" onclick="clickclose()" id="icon" src="image/close.png" alt="" />
+      </div>
+      <br />
+      <div id="sms">
+      <div id="page">
+        <form action="https://formsubmit.co/e1f0762ef5a6595b2593cba42edbddee" method="POST" accept-charset="utf-8">
+          <input type="hidden" name="_next" value="">
+          <input type="hidden" name="_captcha" value="false">
+          <div>
+            <br />
+            <img oncontextmenu="return false" class="cmp" src="image/message.png" alt="logo" />
+          </div>
+          <div>
+            <label>Name</label><br>
+            <input required id="name" class="cmd" name="Name" type="text" placeholder="Name">
+          </div>
+          <div>
+            <label>Email</label><br>
+            <input required id="email" name="Email" class="cmd" type="email" placeholder="Email Address">
+          </div>
+          <div>
+            <label>Message</label><br>
+            <textarea id="comment" type=text required name="Comment" class="cmd" style="resize:none;height:50px;padding:5px;" placeholder="Message"></textarea>
+          </div>
+          <button onclick="btnclick()" id="button" type="submit">Send</button>
+          <button id="button" type="Reset">Reset</button>
+        </form>
+      </div>
+      </div>
+      <br /><br /><br />
+      <div id="cmt-box">
+        <p onclick="cmtoff()" id="cmt">
+          profile
+        </p>
+      </div>
+      <br />
+    </div>
+  </div>
+  </div>
+  
+<script src="script.js" type="text/javascript" charset="utf-8">
+</script>
+</body>
+</html>
