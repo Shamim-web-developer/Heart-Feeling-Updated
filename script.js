@@ -14,6 +14,7 @@ function pageload() {
   container.style.display = "block";
   icon2.style.display = "block";
   body.style.backgroundImage = "url('bg.jpg')";
+  audio1.play();
 }
 
 function btnclick() {
