@@ -176,6 +176,7 @@ body
 {
   display: flex;
   justify-content: center;
+  animation: knock 10s infinite;
 }
 #gm 
 {
