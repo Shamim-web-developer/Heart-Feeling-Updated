@@ -35,6 +35,11 @@ function btnclick(){
 	if (!name.checkValidity() || !email.checkValidity() || !comment.checkValidity()){
 	}else 
 	{
-	  swal("Successful!", "Your message will be sent!", "success")
+	  swal({
+	    icon: "success",
+	    title: "Successful!",
+	    text: "Your message will be sent!",
+	    timer: 2500
+	  });
 	}
 }
